@@ -33,7 +33,7 @@ int diag1(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], cha
 int diag2(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal Kiri atas
 int diag3(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal kanan atas
 int diag4(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal Kiri bawah
-int ver1(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23); // Vertikal Atas
+int ver1(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Vertikal Atas
 int ver2(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Vertikal Bawah
 int hor1(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Horizontal Kanan
 int hor2(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Horizontal Kiri
