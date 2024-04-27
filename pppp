@@ -41,12 +41,12 @@ int main()
             cout << endl << endl;
             cout << "\tJumlah kata yang ingin dicari ? ";
             cin >> jml;
-            char kata[jml][15]; int pnjgkata[jml];
+            char kata[jml][23]; int pnjgkata[jml];
             cin.ignore();
             // Input kata
             for(int i=0;i<jml;i++){
                 cout << i+1 << ". ";
-                cin.getline(kata[i], 15);
+                cin.getline(kata[i], 23);
                 pnjgkata[i]=strlen(kata[i]);    //Menghitung jumlah huruf pada kata
             }
             // ToUpper
@@ -61,8 +61,8 @@ int main()
             // Mencari Kata
             int cek=0,cek2=0;
             for(int x=0;x<jml;x++){
-                for(int i=0;i<15;i++){
-                    for(int j=0;j<15;j++){
+                for(int i=0;i<23;i++){
+                    for(int j=0;j<23;j++){
                         if(kata[x][0]==word[i][j]){
                             cek2 = dkb(x, i, j, cek, cek2, pnjgkata, kata, word);
                             cek2 = dKa(x, i, j, cek, cek2, pnjgkata, kata, word);
@@ -114,7 +114,7 @@ void printword(){
             cout << "-----------------------------------------------------------";
     }
 }
-int dkb(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[15], char (*wval)[15]){
+int dkb(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[23], char (*wval)[23]){
     for(int k=0;k<*(valpnjg+xval);k++){
         if(kval[xval][k]==wval[ival+k][jval+k]){
             cval=k;
@@ -128,7 +128,7 @@ int dkb(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char
     }
     return c2val;
 }
-int dKa(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[15], char (*wval)[15]){
+int dKa(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[23], char (*wval)[23]){
     for(int k=0;k<*(valpnjg+xval);k++){
         if(kval[xval][k]==wval[ival-k][jval-k]){
             cval=k;
@@ -142,7 +142,7 @@ int dKa(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char
     }
     return c2val;
 }
-int dka(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[15], char (*wval)[15]){
+int dka(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[23], char (*wval)[23]){
     for(int k=0;k<*(valpnjg+xval);k++){
         if(kval[xval][k]==wval[ival-k][jval+k]){
             cval=k;
@@ -156,7 +156,7 @@ int dka(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char
     }
     return c2val;
 }
-int dKb(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[15], char (*wval)[15]){
+int dKb(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[23], char (*wval)[23]){
     for(int k=0;k<*(valpnjg+xval);k++){
         if(kval[xval][k]==wval[ival-k][jval+k]){
             cval=k;
@@ -170,7 +170,7 @@ int dKb(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char
     }
     return c2val;
 }
-int va(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[15], char (*wval)[15]){
+int va(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[23], char (*wval)[23]){
     for(int k=0;k<*(valpnjg+xval);k++){
         if(kval[xval][k]==wval[ival+k][jval]){
             cval=k;
@@ -184,7 +184,7 @@ int va(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char 
     }
     return c2val;
 }
-int vb(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[15], char (*wval)[15]){
+int vb(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[23], char (*wval)[23]){
     for(int k=0;k<*(valpnjg+xval);k++){
         if(kval[xval][k]==wval[ival-k][jval]){
             cval=k;
@@ -198,7 +198,7 @@ int vb(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char 
     }
     return c2val;
 }
-int hk(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[15], char (*wval)[15]){
+int hk(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[23], char (*wval)[23]){
     for(int k=0;k<*(valpnjg+xval);k++){
         if(kval[xval][k]==wval[ival][jval+k]){
             cval=k;
@@ -212,7 +212,7 @@ int hk(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char 
     }
     return c2val;
 }
-int hK(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[15], char (*wval)[15]){
+int hK(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[23], char (*wval)[23]){
     for(int k=0;k<*(valpnjg+xval);k++){
         if(kval[xval][k]==wval[ival][jval-k]){
             cval=k;
