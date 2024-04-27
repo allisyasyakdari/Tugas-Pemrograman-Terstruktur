@@ -21,14 +21,14 @@ char word[23][23]={ {'A','A','F','L','K','H','P','F','S','S','U','F','I','C','I'
                 };
 
 void printword();
-int dkb(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal kanan bawah
-int dKa(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal Kiri atas
-int dka(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal kanan atas
-int dKb(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal Kiri bawah
-int va(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Vertikal Atas
-int vb(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Vertikal Bawah
-int hk(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Horizontal Kanan
-int hK(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Horizontal Kiri
+int diag1(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal kanan bawah
+int diag2(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal Kiri atas
+int diag3(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal kanan atas
+int diag4(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal Kiri bawah
+int ver1(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23); // Vertikal Atas
+int ver2(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Vertikal Bawah
+int hor1(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Horizontal Kanan
+int hor2(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Horizontal Kiri
 
 int main()
 {
