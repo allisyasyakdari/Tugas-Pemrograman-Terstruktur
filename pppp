@@ -45,11 +45,11 @@ int main()
             printword();
 
             // Jumlah kata yang dicari
-            int jml;
+            int jumlah;
             cout << endl << endl;
             cout << "\tJumlah kata yang ingin dicari ? ";
-            cin >> jml;
-            char kata[jml][23]; int pnjgkata[jml];
+            cin >> jumlah;
+            char kata[jumlah][23]; int panjang[jml];
             cin.ignore();
             // Input kata
             for(int i=0;i<jml;i++){
