@@ -49,7 +49,7 @@ int main()
             cout << endl << endl;
             cout << "\tJumlah kata yang ingin dicari ? ";
             cin >> jumlah;
-            char kata[jumlah][23]; int panjang[jml];
+            char kata[jumlah][23]; int panjang[jumlah];
             cin.ignore();
             // Input kata
             for(int i=0;i<jml;i++){
