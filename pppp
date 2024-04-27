@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-
+all lop padil, semoga padil lop all
 using namespace std;
 
 char word[23][23]={ {'A','A','F','L','K','H','P','F','S','S','U','F','I','C','I','C','L','E','S','G','N','N','H'},
