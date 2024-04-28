@@ -46,11 +46,11 @@ int main(){
             cin >> jumlah;
             char kata[jumlah][23]; int panjang[jumlah];
             cin.ignore();
-            // Input kata
+            // Input dan menghitung jumlah kata
             for(int i=0;i<jumlah;i++){
                 cout << i+1 << ". ";
                 cin.getline(kata[i], 23);
-                panjang[i]=strlen(kata[i]);    //Menghitung jumlah huruf pada kata
+                panjang[i]=strlen(kata[i]); 
             }
             // ToUpper
             for(int i=0;i<jumlah;i++){
