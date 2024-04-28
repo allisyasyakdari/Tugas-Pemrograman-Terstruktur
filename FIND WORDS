@@ -86,13 +86,13 @@ int main()
             // OUTPUT
             cout << x+1 << ". ";
             if(cek2>0){
-                cout << " Ada !";
+                cout << " Ada";
                 cek2 = 0;
             }else
-                cout << " Tidak ada !";
+                cout << " Tidak ada";
                 cout << endl;
             }
-            cout << endl << "Ingin mencoba lagi ?(y/n) ";cin>>lagi;
+            cout << endl << "Ingin mencoba lagi ? y/n ";cin>>lagi;
     }while(lagi == 'y');
 	cin.get();
 	return 0;
