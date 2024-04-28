@@ -101,12 +101,9 @@ int main()
 
 void printword(){
     for(int i=0;i<15;i++){
-        cout << "-----------------------------------------------------------"<<endl;
         for(int j=0;j<15;j++)
-            cout << word[i][j] << " | ";
+            cout << word[i][j];
         cout << endl;
-        if(i==14)
-            cout << "-----------------------------------------------------------";
     }
 }
 int diag1(int &xval, int &ival, int &jval, int cval, int c2val, int *valpnjg, char (*kval)[23], char (*wval)[23]){
