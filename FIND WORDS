@@ -45,21 +45,21 @@ int main()
             printword();
 
             // Jumlah kata yang dicari
-            int jml;
+            int jumlah;
             cout << endl << endl;
             cout << "\tJumlah kata yang ingin dicari ? ";
-            cin >> jml;
-            char kata[jml][23]; int pnjgkata[jml];
+            cin >> jumlah;
+            char kata[jumlah][23]; int panjang[jumlah];
             cin.ignore();
             // Input kata
-            for(int i=0;i<jml;i++){
+            for(int i=0;i<jumlah;i++){
                 cout << i+1 << ". ";
                 cin.getline(kata[i], 23);
-                pnjgkata[i]=strlen(kata[i]);    //Menghitung jumlah huruf pada kata
+                panjang[i]=strlen(kata[i]);    //Menghitung jumlah huruf pada kata
             }
             // ToUpper
-            for(int i=0;i<jml;i++){
-                for(int j=0;j<pnjgkata[i];j++){
+            for(int i=0;i<jumlah;i++){
+                for(int j=0;j<panjang[i];j++){
                     if((int)kata[i][j] < 97 || (int)kata[i][j] > 122)
                         continue;
                     else
@@ -68,18 +68,18 @@ int main()
             }
             // Mencari Kata
             int cek=0,cek2=0;
-            for(int x=0;x<jml;x++){
+            for(int x=0;x<jumlah;x++){
                 for(int i=0;i<23;i++){
                     for(int j=0;j<23;j++){
                         if(kata[x][0]==word[i][j]){
-                            cek2 = diag1(x, i, j, cek, cek2, pnjgkata, kata, word);
-                            cek2 = diag2(x, i, j, cek, cek2, pnjgkata, kata, word);
-                            cek2 = diag3(x, i, j, cek, cek2, pnjgkata, kata, word);
-                            cek2 = diag4(x, i, j, cek, cek2, pnjgkata, kata, word);
-                            cek2 = ver1(x, i, j, cek, cek2, pnjgkata, kata, word);
-                            cek2 = ver2(x, i, j, cek, cek2, pnjgkata, kata, word);
-                            cek2 = hor1(x, i, j, cek, cek2, pnjgkata, kata, word);
-                            cek2 = hor2(x, i, j, cek, cek2, pnjgkata, kata, word);
+                            cek2 = diag1(x, i, j, cek, cek2, panjang, kata, word);
+                            cek2 = diag2(x, i, j, cek, cek2, panjang, kata, word);
+                            cek2 = diag3(x, i, j, cek, cek2, panjang, kata, word);
+                            cek2 = diag4(x, i, j, cek, cek2, panjang, kata, word);
+                            cek2 = ver1(x, i, j, cek, cek2, panjang, kata, word);
+                            cek2 = ver2(x, i, j, cek, cek2, panjang, kata, word);
+                            cek2 = hor1(x, i, j, cek, cek2, panjang, kata, word);
+                            cek2 = hor2(x, i, j, cek, cek2, panjang, kata, word);
                         }
                     }
                 }
