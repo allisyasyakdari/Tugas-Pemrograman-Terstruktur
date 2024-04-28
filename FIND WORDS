@@ -1,8 +1,6 @@
 #include <iostream>
 #include <cstring>
-all lop padil, semoga padil lop all
 using namespace std;
-
 char word[23][23]={ {'A','A','F','L','K','H','P','F','S','S','U','F','I','C','I','C','L','E','S','G','N','N','H'},
                     {'S','F','V','R','E','O','M','R','W','L','R','T','T','S','X','O','Q','Q','N','A','O','A','O'},
                     {'Q','E','I','A','I','F','X','A','E','I','R','F','V','F','Y','S','X','I','M','I','N','J','I'},
@@ -27,7 +25,6 @@ char word[23][23]={ {'A','A','F','L','K','H','P','F','S','S','U','F','I','C','I'
                     {'B','F','R','E','E','Z','I','N','G','R','A','I','N','S','L','I','L','G','T','M','E','L','T'},
                     {'H','Q','P','Y','L','W','H','F','M','N','F','F','U','F','P','S','W','X','N','U','M','M','V'},
                 };
-
 void printword();
 int diag1(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal kanan bawah
 int diag2(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Diagonal Kiri atas
@@ -38,12 +35,10 @@ int ver2(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char
 int hor1(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Horizontal Kanan
 int hor2(int &, int &, int &, int cval, int c2val, int *, char (*kval)[23], char (*wval)[23]); // Horizontal Kiri
 
-int main()
-{
+int main(){
     char lagi = 'y';
     do{
             printword();
-
             // Jumlah kata yang dicari
             int jumlah;
             cout << endl << endl;
@@ -99,9 +94,7 @@ int main()
     }while(lagi == 'y');
 	cin.get();
 	return 0;
-
 }
-
 void printword(){
     for(int i=0;i<15;i++){
         for(int j=0;j<15;j++)
