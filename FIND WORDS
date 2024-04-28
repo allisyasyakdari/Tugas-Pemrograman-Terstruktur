@@ -84,6 +84,9 @@ int main()
                     }
                 }
             // OUTPUT
+	    if(x==0){
+		cout<<"Hasil: "<<endl;
+	    }
             cout << x+1 << ". ";
             if(cek2>0){
                 cout << " Ada";
